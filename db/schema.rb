@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20140909021418) do
   create_table "test_items", force: true do |t|
     t.integer  "user_id"
     t.integer  "subject_id"
-    t.string   "type"
+    t.string   "question_type"
     t.text     "question"
     t.string   "answer"
     t.datetime "created_at"
@@ -50,10 +50,11 @@ ActiveRecord::Schema.define(version: 20140909021418) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "type"
+    t.string   "user_type"
     t.string   "email"
     t.string   "password"
     t.string   "first_name"
+    t.string   "last_name"
     t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
