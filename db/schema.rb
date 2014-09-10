@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20140909021418) do
   enable_extension "plpgsql"
 
   create_table "multi_choices", force: true do |t|
-    t.integer  "testItem_id"
+    t.integer  "test_item_id"
     t.string   "wrong_choice_one"
     t.string   "wrong_choice_two"
     t.string   "wrong_choice_three"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20140909021418) do
   end
 
   create_table "responses", force: true do |t|
-    t.integer  "testItem_id"
+    t.integer  "test_item_id"
     t.integer  "user_id"
     t.string   "user_answer"
     t.datetime "created_at"
