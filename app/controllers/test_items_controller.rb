@@ -1,7 +1,7 @@
 class TestItemsController < ApplicationController
 
   def index
-    if session[:id]
+    if logged_in?
       render :index
     else
       render "../views/home"

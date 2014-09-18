@@ -1,0 +1,5 @@
+<%= form_for :user, url: session_path do |f| %>
+  <p>Email: <%= f.text_field :email, placeholder: 'youremail@example.com' %></p>
+  <p>Password: <%= f.text_field :password, placeholder: 'password' %></p>
+  <p><%= f.submit 'sign-in' %></p>
+<% end %>
