@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <h1>Quest</h1>
+    <% if logged_in? %>
+      <%= link_to 'logout', session_path, method: :delete %>
+    <% end %>
+  </header>
 
 <%= yield %>
 
